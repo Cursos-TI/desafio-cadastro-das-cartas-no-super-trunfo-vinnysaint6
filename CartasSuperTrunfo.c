@@ -13,9 +13,9 @@ int main(){
     printf("-------------------->>> DADOS DA 1ª CARTA <<<-------------------\n");
     printf("\n");
 
-    printf("Digite o estado: ");
+    printf("Digite o estado (A a H): ");
     scanf(" %c", &estado1);
-    printf("Digite o codigo da carta: ");
+    printf("Digite o codigo da carta (Ex: A01: ");
     scanf("%s", &codCarta1);
     printf("Digite o nome da cidade: ");
     scanf("%s", &nomeCidade1);
