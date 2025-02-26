@@ -16,7 +16,7 @@ int main(){
     printf("---------------->>> DADOS DA 1ª CARTA <<<---------------\n");
     printf("\n");
 
-    // Entrada de Dados Carta 1
+    // Entrada de Dados da Carta 1
     printf("Digite o estado (de A a H): ");
     scanf(" %c", &estado1);
     printf("Digite o codigo da carta (Ex: A01): ");
@@ -37,7 +37,7 @@ int main(){
     printf("---------------->>> DADOS DA 2ª CARTA <<<---------------\n");
     printf("\n");
 
-    // Entrada de Dados Carta 2
+    // Entrada de Dados da Carta 2
     printf("Digite o estado (de A a H): ");
     scanf(" %c", &estado2);
     printf("Digite o codigo da carta (Ex: A01): ");
@@ -65,10 +65,11 @@ int main(){
     // Verificação de comparação entre as cartas 1 e 2
 
     printf("\n");
-    printf("------------------->>> CARTA 1 <<<-------------------\n");
+    printf("--------------->>> DESAFIO SUPERTRUNFO <<<--------------\n");
+    printf("-------------------->>> CARTA 1 <<<---------------------\n");
     printf("\n");
 
-    // Saída de Dados Carta 1
+    // Saída de Dados da Carta 1
     printf("Estado: %c\n", estado1);
     printf("Código da carta: %s\n", codCarta1);
     printf("Nome da cidade: %s\n", nomeCidade1);
@@ -80,10 +81,11 @@ int main(){
     printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
 
     printf("\n");
-    printf("------------------->>> CARTA 2 <<<-------------------\n");
+    printf("--------------->>> DESAFIO SUPERTRUNFO <<<--------------\n");
+    printf("-------------------->>> CARTA 2 <<<---------------------\n");
     printf("\n");
 
-    // Saída de Dados Carta 2
+    // Saída de Dados da Carta 2
     printf("Estado: %c\n", estado2);
     printf("Código da carta: %s\n", codCarta2);
     printf("Nome da cidade: %s\n", nomeCidade2);
@@ -95,20 +97,23 @@ int main(){
     printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
     printf("\n");
 
-    printf("------------->>> COMPARAÇÃO DE CARTAS <<<------------\n");
+    printf("--------------->>> DESAFIO SUPERTRUNFO <<<--------------\n");
+    printf("--------------->>> COMPARAÇÃO DE CARTAS <<<-------------\n");
     printf("\n");
 
-    // Resultado das comparações das cartas
-    printf("População: Carta 1 venceu (%d)\n", populacao1 > populacao2);
-    printf("Área: Carta 1 venceu (%d)\n", area1 > area2);
-    printf("Produto Interno Bruto (PIB): Carta 1 venceu (%d)\n", pib1 > pib2);
-    printf("Pontos Turísticos: Carta 1 venceu (%d)\n", pTuristico1 > pTuristico2);
-    printf("Densidade Populacional: Carta 2 venceu (%d)\n", densidadePopulacional1 < densidadePopulacional2);
-    printf("PIB per Capita: Carta 1 venceu (%d)\n", pibPerCapita1 > pibPerCapita2);
-    printf("Super Poder: Carta 1 venceu (%d)\n", superPoder1 > superPoder2);
+    printf("Carta 1 - %s: %.2f\n", nomeCidade1, pib1); // Fortaleza (CE)
+    printf("Carta 2 - %s: %.2f\n", nomeCidade2, pib2); // Salvador (BA)
+    
+    // Resultado da execução da estrutura condicional de comparaçãos das cartas 1 e 2 com If Else
+    if(pib1 > pib2){
+        printf("Resultado: Carta 1 (%s) venceu!\n", nomeCidade1);
+    }else{
+        printf("Resultado: Carta 2 (%s) venceu!\n", nomeCidade2);
+    }
 
     printf("\n");
-    printf("----------------->>> FIM DO JOGO <<<-----------------\n");
+    printf("--------------->>> DESAFIO SUPERTRUNFO <<<--------------\n");
+    printf("------------------->>> FIM DO JOGO <<<------------------\n");
 
     return 0;
 
